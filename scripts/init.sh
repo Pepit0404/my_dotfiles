@@ -29,7 +29,7 @@ fi
 
 echo -n "ZSH installation: "
 if [ "$(zsh --version 2> /dev/null)" == "" ]; then 
-    apt install zsh > /dev/null
+    apt install -y zsh
     echo 'Finish'
 else
     echo 'already installed'
@@ -37,7 +37,7 @@ fi
 
 echo -n "VIM installation: "
 if [ "$(vim --version 2> /dev/null)" == "" ]; then
-    apt install vim > /dev/null
+    apt install -y vim 
     echo 'Finish'
 else
     echo 'already installed'

@@ -4,22 +4,17 @@
 DOTFILES_DIR="$HOME/my_dotfiles/config"
 BACKUP_DIR="$HOME/my_dotfiles/backup"
 
-# Verification of the shell
-if [[ $SHELL != *"/zsh" ]]; then
-   chsh -s $(which zsh)
-fi
-
-repo = "$HOME/my_dotfiles/config/.zsh/plugins/fast-syntax-highlighting"
+repo="$HOME/my_dotfiles/config/.zsh/plugins/fast-syntax-highlighting"
 if [ ! -d $repo ]; then 
     git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git $repo
 fi
 
-repo = "$HOME/my_dotfiles/config/.zsh/plugins/zsh-autosuggestions"
+repo="$HOME/my_dotfiles/config/.zsh/plugins/zsh-autosuggestions"
 if [ ! -d $repo ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions.git $repo
 fi
 
-repo = "$HOME/my_dotfiles/config/.zsh/plugins/zsh-completions"
+repo="$HOME/my_dotfiles/config/.zsh/plugins/zsh-completions"
 if [ ! -d $repo ]; then
     git clone https://github.com/zsh-users/zsh-completions.git $repo
 fi

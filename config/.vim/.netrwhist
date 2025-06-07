@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/samuel/.oh-my-zsh/custom/functions'
+let g:netrw_dirhist_9='/home/samuel/.oh-my-zsh/custom'
+let g:netrw_dirhist_8='/home/samuel/.oh-my-zsh/custom/plugins'
+let g:netrw_dirhist_7='/home/samuel/.oh-my-zsh/custom'
+let g:netrw_dirhist_6='/home/samuel/.oh-my-zsh'
+let g:netrw_dirhist_5='/home/samuel/.oh-my-zsh/custom/functions'
+let g:netrw_dirhist_4='/home/samuel/.vim/colors'
+let g:netrw_dirhist_3='/home/samuel/.vim'
+let g:netrw_dirhist_2='/home/samuel'
+let g:netrw_dirhist_1='/home/samuel/.vim'

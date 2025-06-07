@@ -10,6 +10,6 @@ cd my_dotfiles
 ***DO NOT CHANGE THE FOLDER NAME !***
 ## Commande
 ```bash
-sudo ./script/init.sh
-./script/setup.sh
+sudo ./scripts/init.sh
+./scripts/setup.sh
 ```

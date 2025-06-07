@@ -32,6 +32,12 @@ function set_git_prompt {
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd set_git_prompt
 
+function update_terminal_title() {
+  print -Pn "\e]0;%~\a"
+}
+add-zsh-hook precmd update_terminal_title
+
+
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lla='ls -la'

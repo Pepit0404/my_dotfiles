@@ -13,4 +13,5 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 colorscheme molokai
 
 set belloff=all
+set tabstop=4 smarttab
 

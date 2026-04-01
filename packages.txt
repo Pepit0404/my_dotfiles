@@ -1,0 +1,11 @@
+# NECESSARY PACKAGES
+git
+vim
+zsh
+
+# OTHER
+fastfetch
+rofi
+waybar
+hyprlock
+hyprpaper

@@ -1,0 +1,3 @@
+fast-syntax-highlighting https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions.git
+zsh-completions https://github.com/zsh-users/zsh-completions.git

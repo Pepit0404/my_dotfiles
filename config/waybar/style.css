@@ -1,0 +1,132 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 0.75rem;
+}
+
+window#waybar {
+    background: rgba(115, 147, 179, 0.5);
+    color: #ffffff;
+}
+
+/* Workspaces */
+#workspaces {
+    background: rgba(20, 24, 30, 0.6);
+    border-radius: 12px;
+    margin: 2px 4px;
+    padding: 0 0;
+    border: 1px solid rgba(26, 188, 156, 0.15);
+}
+
+#workspaces button {
+    padding: 0 4px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    margin: 0px 1px;
+}
+
+#workspaces button:hover {
+    background: rgba(26, 188, 156, 0.2);
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #1abc9c;
+    background: rgba(26, 188, 156, 0.15);
+    border-bottom: 2px solid #1abc9c;
+}
+
+#workspaces button.urgent {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.15);
+    border-bottom: 2px solid #e74c3c;
+}
+
+#window {
+    padding: 0 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Ortak modül stili */
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 12px;
+    margin: 6px 2px;
+    background: rgba(20, 24, 30, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.2s ease;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover {
+    background: rgba(30, 34, 42, 0.85);
+    border-color: rgba(26, 188, 156, 0.3);
+}
+
+/* Saat */
+#clock {
+    color: #1abc9c;
+    font-weight: bold;
+    border-color: rgba(26, 188, 156, 0.25);
+    letter-spacing: 1px;
+}
+
+/* Pil */
+#battery.warning {
+    color: #f39c12;
+    border-color: rgba(243, 156, 18, 0.3);
+}
+
+#battery.critical {
+    color: #e74c3c;
+    border-color: rgba(231, 76, 60, 0.4);
+    animation: blink 1s linear infinite;
+}
+
+#battery.charging {
+    color: #1abc9c;
+}
+
+/* Ağ */
+#network.disconnected {
+    color: #636e72;
+}
+
+/* CPU & RAM */
+#cpu.high,
+#memory.high {
+    color: #e74c3c;
+    border-color: rgba(231, 76, 60, 0.3);
+}
+
+/* Tray */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    border-color: rgba(231, 76, 60, 0.4);
+}
+
+/* Pil kritik yanıp sönme */
+@keyframes blink {
+    to {
+        color: #ffffff;
+        background: rgba(231, 76, 60, 0.2);
+    }
+}

@@ -21,9 +21,9 @@ source ~/.zsh/git/git-prompt.sh
 setopt prompt_subst
 
 function set_git_prompt {
-    local exit_code=$?  
+    local exit_code=$?
   #PS1="%n@%m %~$(__git_ps1 ' (%s)') \$ "
-  
+
     PS1="%{$(tput setaf 121)%}%n%{$(tput setaf 121)%}@%{$(tput setaf 121)%}%m %{$(tput setaf 32)%}%~$(__git_ps1)%{$(tput sgr0)%} $ "
     return $exit_code
 }
@@ -43,9 +43,9 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lla='ls -la'
 
-source ~/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
+source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word

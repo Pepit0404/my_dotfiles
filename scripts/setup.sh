@@ -18,7 +18,7 @@ CONFIG_DIR="$HOME/my_dotfiles/config"
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SCRIPT_DIR="$REPO_DIR/scripts"
 PLUGINS_FILE="$REPO_DIR/zsh_plugins.txt"
-PLUGINS_DIR="$REPO_DIR/config/.zsh/plugins"
+PLUGINS_DIR="$REPO_DIR/config/zsh/plugins"
 
 while IFS=' ' read -r name url || [[ -n "$name" ]]; do
   [[ -z "$name" || "$name" == \#* ]] && continue

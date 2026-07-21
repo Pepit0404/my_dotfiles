@@ -1,0 +1,13 @@
+# NECESSARY PACKAGES
+git
+vim
+zsh
+pavucontrol
+
+# OTHER
+fastfetch
+hyprland
+rofi
+waybar
+hyprlock
+hyprpaper

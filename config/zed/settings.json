@@ -7,67 +7,205 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "project_panel": {
-    "git_status_indicator": true,
-  },
-  "git_panel": {
-    "tree_view": false,
-  },
-  "agent": {
-    "default_model": {
-      "effort": "high",
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-      "enable_thinking": false,
+    "preview_tabs": {
+        "enable_preview_multibuffer_from_code_navigation": false,
     },
-    "favorite_models": [],
-    "model_parameters": [],
-  },
-  "inlay_hints": {
-    "show_background": false,
-  },
-  "agent_ui_font_size": 11.0,
-  "languages": {
-    "TypeScript": {
-      "tab_size": 2,
+    "terminal": {
+        "show_count_badge": false,
+        "toolbar": {
+            "breadcrumbs": false,
+        },
+        "keep_selection_on_copy": true,
     },
-    "Vue.js": {
-      "tab_size": 2,
+    "proxy": "",
+    "indent_guides": {
+        "background_coloring": "disabled",
     },
-    "JSON": {
-      "tab_size": 2,
+    "active_pane_modifiers": {
+        "inactive_opacity": 1.0,
     },
-  },
-  "icon_theme": "Material Icon Theme",
-  "base_keymap": "VSCode",
-  "minimap": {
-    "show": "never",
-  },
-  "buffer_font_fallbacks": ["Consolas", "Courier New", "monospace"],
-  "buffer_font_family": "JetBrains Mono",
-  "ui_font_size": 12.0,
-  "buffer_font_size": 10.0,
-  "buffer_font_features": {
-    "liga": true,
-  },
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Catppuccin Frappé",
-  },
-  "diagnostics": {
-    "button": true,
-    "include_warnings": true,
-    "inline": {
-      "enabled": true,
-      "update_debounce_ms": 150,
-      "padding": 4,
-      "min_column": 0,
-      "max_severity": null,
+    "file_finder": {
+        "include_ignored": "all",
     },
-    "cargo": null,
-  },
-  "tabs": {
-    "show_diagnostics": "errors",
-  },
+    "colorize_brackets": true,
+    "format_on_save": "on",
+    "tab_size": 4,
+    "toolbar": {
+        "code_actions": false,
+    },
+    "scrollbar": {
+        "selected_text": true,
+    },
+    "relative_line_numbers": "disabled",
+    "gutter": {
+        "line_numbers": true,
+    },
+    "prettier": {
+        "parser": "",
+        "allowed": true,
+    },
+    "search": {
+        "include_ignored": false,
+    },
+    "tab_bar": {
+        "show_pinned_tabs_in_separate_row": false,
+    },
+    "title_bar": {
+        "show_menus": false,
+        "show_branch_status_icon": false,
+    },
+    "status_bar": {
+        "show_active_file": false,
+        "line_endings_button": false,
+    },
+    "agent_servers": {
+        "gemini": {
+            "type": "registry",
+        },
+        "github-copilot-cli": {
+            "type": "registry",
+        },
+    },
+    "code_lens": "on",
+    "vim_mode": false,
+    "cli_default_open_behavior": "new_window",
+    "outline_panel": {
+        "button": true,
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "auto_update_extensions": {
+        "vue": false,
+    },
+    "diff_view_style": "unified",
+    "project_panel": {
+        "hide_hidden": false,
+        "hide_root": true,
+        "diagnostic_badges": true,
+        "bold_folder_labels": false,
+        "dock": "left",
+        "git_status_indicator": true,
+    },
+    "git_panel": {
+        "file_icons": false,
+        "show_count_badge": false,
+        "entry_primary_click_action": "project_diff",
+        "dock": "left",
+        "tree_view": false,
+    },
+    "agent": {
+        "dock": "right",
+        "default_model": {
+            "effort": "high",
+            "provider": "copilot_chat",
+            "model": "gpt-5-mini",
+            "enable_thinking": false,
+        },
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "inlay_hints": {
+        "enabled": false,
+        "show_background": false,
+    },
+    "agent_ui_font_size": 11.0,
+    "languages": {
+        "TypeScript": {
+            "format_on_save": "on",
+            "inlay_hints": {
+                "enabled": false,
+            },
+            "show_completions_on_input": true,
+            "tab_size": 2,
+        },
+        "Vue.js": {
+            "prettier": {
+                "allowed": true,
+            },
+            "inlay_hints": {
+                "enabled": false,
+            },
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "tab_size": 2,
+        },
+        "JSON": {
+            "tab_size": 2,
+        },
+    },
+    "icon_theme": "Material Icon Theme",
+    "wsl_connections": [
+        {
+            "distro_name": "Ubuntu-24.04",
+            "user": null,
+            "projects": [
+                {
+                    "paths": ["/home/samuel/project/ak/ak-portal"],
+                },
+                {
+                    "paths": ["/home/samuel/project/ak/athlete-hub"],
+                },
+                {
+                    "paths": ["/home/samuel/project/ak/athlete-hub-old"],
+                },
+            ],
+        },
+    ],
+    "base_keymap": "VSCode",
+    "minimap": {
+        "show": "never",
+    },
+    "buffer_font_fallbacks": ["Consolas", "Courier New", "monospace"],
+    "buffer_font_family": "JetBrains Mono",
+    "ui_font_size": 12.0,
+    "buffer_font_size": 12.0,
+    "buffer_font_features": {
+        "liga": true,
+    },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Catppuccin Frappé",
+    },
+    "diagnostics": {
+        "button": true,
+        "include_warnings": true,
+        "inline": {
+            "enabled": true,
+            "update_debounce_ms": 150,
+            "padding": 4,
+            "min_column": 0,
+            "max_severity": null,
+        },
+        "cargo": null,
+    },
+    "tabs": {
+        "file_icons": false,
+        "git_status": true,
+        "show_diagnostics": "errors",
+    },
+    "auto_install_extensions": {
+        "html": true,
+        "git-firefly": true,
+        "catppuccin": true,
+        "dockerfile": true,
+        "material-icon-theme": true,
+        "toml": true,
+    },
+    "file_scan_exclusions": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/.jj",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/Thumbs.db",
+        "**/.classpath",
+        "**/.settings",
+        "**/.nuxt",
+        "**/.output",
+        "**/node_modules",
+    ],
 }

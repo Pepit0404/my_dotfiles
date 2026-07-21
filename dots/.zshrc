@@ -37,8 +37,6 @@ function update_terminal_title() {
 }
 add-zsh-hook precmd update_terminal_title
 
-export PATH=$PATH:/usr/local/go/bin
-
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lla='ls -la'
@@ -49,3 +47,5 @@ source ~/.config/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+# IF YOU DON'T WANT TO PUSH YOU LOCAL CONFIG LIKE EXPORT PUT IT ON THE .zprofile FILE

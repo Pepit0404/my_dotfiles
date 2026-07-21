@@ -14,4 +14,3 @@ colorscheme molokai
 
 set belloff=all
 set tabstop=4 smarttab
-
